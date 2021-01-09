@@ -5,7 +5,7 @@ import 'screens/home_screen.dart';
 import 'screens/login_screen.dart';
 import 'screens/signup_screen.dart';
 import 'models/authentication.dart';
-
+import 'screens/profilepage.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
           SignupScreen.routeName: (ctx)=> SignupScreen(),
           LoginScreen.routeName: (ctx)=> LoginScreen(),
           HomeScreen.routeName: (ctx)=> HomeScreen(),
+          ProfilePage.routeName: (ctx)=> ProfilePage(),
         },
       ),
     );
