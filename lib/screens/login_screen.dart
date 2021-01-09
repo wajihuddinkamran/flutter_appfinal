@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import 'signup_screen.dart';
 import 'home_screen.dart';
 import '../models/authentication.dart';
-import 'profilepage.dart';
+import 'Notes.dart';
 class LoginScreen extends StatefulWidget {
   static const routeName = '/login';
   @override
@@ -153,7 +153,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           onPressed: ()
                           {
                             _submit();
-                              Navigator.of(context).pushReplacementNamed(ProfilePage.routeName);
+                              Navigator.of(context).pushReplacementNamed(notes.routeName);
                           },
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30),
